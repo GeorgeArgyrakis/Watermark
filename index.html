@@ -1,1 +1,75 @@
-My GitHub Page
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>ScreenWatermark by GeorgeArgyrakis</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>ScreenWatermark</h1>
+        <p>A simple way to add watermark on activities</p>
+
+        <p class="view"><a href="https://github.com/GeorgeArgyrakis/Watermark">View the Project on GitHub <small>GeorgeArgyrakis/watermark</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/GeorgeArgyrakis/watermark/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/GeorgeArgyrakis/watermark/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/GeorgeArgyrakis/watermark">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="ScreenWatermark" class="anchor" href="#ScreenWatermark" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ScreenWatermark</h1>
+
+<p>A simple way to add watermark on activities</p>
+
+<p><img src="https://raw.githubusercontent.com/GeorgeArgyrakis/Watermark/master/screenshot.png" alt="sample"></p>
+
+<h2>
+<a id="UsageExample" class="anchor" href="#Usage-Example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage Example</h2>
+
+
+<pre><code>@Override
+protected void onCreate(Bundle savedInstanceState) {
+...
+    Watermark = new ScreenWatermark(this)
+                     .backgroundColor(Color.argb(100,0,0,255))
+                     .textColor(Color.argb(150,255,186,102))
+                     .textSize(22)
+                     .gravity(Gravity.TOP | Gravity.RIGHT)
+                     .message("Watermark")
+                     .show();'
+...
+}
+
+@Override
+protected void onDestroy() {
+    super.onDestroy();
+    // Always call this on destroy of activity to avoid memory leaks
+    if (Watermark != null) {
+         Watermark.dispose();
+    }
+}
+</code></pre>
+
+
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/GeorgeArgyrakis">GeorgeArgyrakis</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
