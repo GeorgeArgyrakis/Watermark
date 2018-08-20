@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScreenWatermark">
+        <attr name="TextSize" format="reference|integer"/>
+        <attr name="BackgroundColor" format="reference|color"/>
+        <attr name="TextColor" format="reference|color"/>
+        <attr name="android:gravity"/>
+        <attr name="ScreenOverlayStyle" format="reference"/>
+    </declare-styleable>
+</resources>
