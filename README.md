@@ -24,6 +24,7 @@ protected void onDestroy() {
     // Always call this on destroy of activity to avoid memory leaks
     if (Watermark != null) {
          Watermark.dispose();
+    }
 }
     
 ```                        
