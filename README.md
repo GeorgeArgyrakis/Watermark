@@ -1,4 +1,4 @@
-# Watermark
+# ScreenWatermark
 A simple way to add watermark on activities
 
 ![Alt text](screenshot.png?raw=true "FloatingKeaboardView Demo")
