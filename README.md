@@ -1,7 +1,7 @@
 # ScreenWatermark
 A simple way to add watermarks on activities
 
-![Alt text](screenshot.png?raw=true ""Watermarks on Screen")")
+![Alt text](screenshot.png?raw=true "Watermarks on Screen")
 
 ## Usage Example
 ``` 
